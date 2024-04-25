@@ -1,4 +1,4 @@
-def matmul(A, B):
+def f(A, B):
     a, b, c, d = A
     w, x, y, z = B
     return (

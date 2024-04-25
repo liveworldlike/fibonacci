@@ -1,11 +1,11 @@
-from matmul import matmul
+import matmul
 
 
-def matpow(A, p):
+def f(A, p):
     res = (1, 0, 0, 1)
     while p:
         if p & 1:
-            res = matmul(res, A)
-        A = matmul(A, A)
+            res = matmul.f(res, A)
+        A = matmul.f(A, A)
         p >>= 1
     return res
